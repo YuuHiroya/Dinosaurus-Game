@@ -1,0 +1,75 @@
+body, h2, h3 {
+    text-align: center;
+}
+
+#board {
+    width: 800px;
+    height: 500px;
+    background: url('image/BG.png');
+    background-size: 100% 100%;
+    margin: 20px auto;
+}
+
+#restart-button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: pink;
+    border-radius: 10px;
+
+}
+
+#area {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+}
+
+@keyframes lari {
+    0% {
+        background: url('image/Run\ \(1\).png');
+        background-size: 100% 100%;
+    }
+    20% {
+        background: url('image/Run\ \(2\).png');
+        background-size: 100% 100%;
+    }
+    50% {
+        background: url('image/Run\ \(4\).png');
+        background-size: 100% 100%;
+    }
+    75% {
+        background: url('image/Run\ \(5\).png');
+        background-size: 100% 100%;
+    }
+}
+
+#dino {
+    width: 170px;
+    height: 120px;
+    background: url('image/Run\ \(1\).png');
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 50px;
+    animation: lari .3s infinite;
+    transition: 1s;
+}
+
+#dino.freeze {
+    animation: none;
+    background: url('image/Run\ \(3\).png');
+    background-size: 100% 100%;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    margin-top: 370px;
+    background: url('image/redbox.png');
+    background-size: 100% 100%;
+    margin-left: 900px;
+}
+
